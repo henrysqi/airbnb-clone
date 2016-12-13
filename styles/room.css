@@ -1,0 +1,166 @@
+.room-hero {
+	height: 700px;
+	width: 100vw;
+}
+
+.room-hero img{
+	height: 100%;
+	width: 100%;
+}
+
+.room-content {
+	width: 50%;
+	margin: 0 auto;
+	height: 1500px
+}
+
+.room-title {
+	width: 100%;
+	height: 110px;
+	margin-top: 25px;
+}
+
+.room-title-text {
+	width: 80%;
+	float: left;
+}
+
+.room-title-pic {
+	width: 20%;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+
+.room-title-pic img {
+	height: 90px;
+	width: 90px;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+
+.room-title-text h1{
+	font-size: 36px;
+	color: #484848;
+}
+
+.room-title-text p{
+	font-size: 15px;
+	color: #484848;
+}
+
+.room-triple-icon {
+	width: 100%;
+	height: 90px;
+	margin-top: 10px;
+}
+
+.room-room-type {
+	width: 33%;
+	height: 100%;
+	float: left;
+}
+
+.room-guests {
+	width: 33%;
+	height: 100%;
+	float: left;
+}
+
+.room-beds {
+	width: 33%;
+	height: 100%;
+	float: left;
+}
+
+.room-triple-icon {
+	border-top: 1px solid #DCE0E0;
+	border-bottom: 1px solid #DCE0E0;
+}
+
+.room-triple-icon-content {
+	text-align: center;
+	padding-top: 15px;
+}
+
+.room-triple-icon-content img {
+	height: 45px;
+	width: 45px;
+}
+
+.room-triple-icon-content p {
+	font-size: 14px;
+	color: #767676;
+}
+
+.room-about {
+	padding: 25px 0;
+	border-bottom: 1px solid #DCE0E0;
+}
+.room-about h2{
+	font-size: 28px;
+	color: #484848;
+	font-weight: 300;
+}
+
+.room-about p{
+	font-size: 19px;
+	color: #484848;
+	font-weight: 300;
+}
+
+.room-stats-title {
+	width: 25%;
+	float: left;
+	padding: 25px 0;
+}
+
+.room-stats-title p{
+	font-size: 19px;
+	color: #484848;
+}
+
+.room-stats-detail {
+	width: 75%;
+	float: left;
+	padding: 25px 0;
+	border-bottom: 1px solid #DCE0E0;
+}
+
+.room-stats-detail p{
+	font-weight: 300;
+	font-size: 19px;
+	color: #484848;
+}
+
+.room-stats-detail p span{
+	font-weight: 400;
+}
+
+.room-stats-detail-col1 {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.room-stats-detail-col2 {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

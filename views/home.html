@@ -1,0 +1,156 @@
+<header-directive></header-directive>
+
+<main>
+	<section class="home-section">
+		
+		<div class="live-there">
+			<h1><span>Live there. </span>Book unique homes <br>and experience a city like a local.</h1>
+			<br>
+			<br>
+			<div class="home-filter">
+				<div class="where">
+					<div class="filter-text">
+						<p>Where</p>
+					</div>
+					<form ng-submit="searchFor(wherename)"><input type="text" placeholder="Destination, city, address" ng-model="wherename"></form>
+				</div>
+				<div class="when">
+					<div class="filter-text">
+						<p>When</p>
+					</div>
+					<div class="when-calendar">
+						<input placeholder="Check In" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
+						<img src="../assets/images/11949946161531595902line_arrow_end.svg.hi.png">
+						<input placeholder="Check Out" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
+					</div>
+				</div>
+				<div class="guests">
+					<div class="guests-num">
+						<div class="filter-text">
+							<p>Where</p>
+						</div>
+						<select>
+							<option>1 Guest</option>
+							<option>2 Guests</option>
+							<option>3 Guests</option>
+							<option>4 Guests</option>
+							<option>5 Guests</option>
+							<option>6 Guests</option>
+							<option>7 Guests</option>
+							<option>8 Guests</option>
+							<option>9 Guests</option>
+							<option>10 Guests</option>
+							<option>11 Guests</option>
+							<option>12 Guests</option>
+							<option>13 Guests</option>
+							<option>14 Guests</option>
+							<option>15 Guests</option>
+							<option>16 Guests</option>
+							<option>16+ Guests</option>
+						</select>
+					</div>
+					<div class="guests-button">
+						<button ng-click="searchFor(wherename)">
+							<p>Search</p>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<br><br><br>
+		<div class="explore-picks">
+			<p class="home-label">Explore Airbnb picks</p>
+			<br>
+			<div class="explore-picks-container">
+				<div class="picks-left">
+					<img src="/assets/images/b04eddeb_original.jpg">
+					<figcaption><span class="picks-price">$50 </span>Loft Studio in the Central Area</figcaption>
+					<figcaption><span class="stars">★★★★★</span><span class="picks-reviews">239 reviews</span></figcaption>
+				</div>
+				<div class="picks-middle">
+					<img src="/assets/images/cda25f99_original.jpg">
+					<figcaption><span class="picks-price">$60 </span>Apartamento en el Vedado</figcaption>
+					<figcaption><span class="stars">★★★★★</span><span class="picks-reviews">70 reviews</span></figcaption>
+				</div>
+				<div class="picks-right">
+					<img src="/assets/images/5d1bf638-dc74-45a5-a951-c5207d2ffea3.jpg">
+					<figcaption><span class="picks-price">$41 </span>平江路大儒巷民国建筑,体验苏州老宅</figcaption>
+					<figcaption><span class="stars">★★★★★</span><span class="picks-reviews">139 reviews</span></figcaption>
+				</div>
+			</div>		
+		</div>
+		
+		<br><br><br>
+		<hr>
+		<br><br><br>
+		
+		<div class="explore-world">
+			<p class="home-label">Explore the world</p>
+			<br>
+			<br>
+			<div class="explore-world-top">
+				<div class="paris"><p class="image-label">Paris</p></div>
+				<div class="paris-right">
+					<div class="rome"><p class="image-label">Rome</p></div>
+					<div class="lisbon"><p class="image-label">Lisbon</p></div>
+				</div>
+				<div class="paris-right-right">
+					<div class="los-angeles"><p class="image-label">Los Angeles</p></div>
+					<div class="tokyo"><p class="image-label">Tokyo</p></div>
+				</div>
+			</div>
+			<div class="explore-world-bottom">
+				<div class="new-york-left">
+					<div class="london"><p class="image-label">London</p></div>
+					<div class="barcelona"><p class="image-label">Barcelona</p></div>
+				</div>
+				<div class="new-york"><p class="image-label">New York</p></div>
+				<div class="new-york-right">
+					<div class="amsterdam"><p class="image-label">Amsterdam</p></div>
+					<div class="berlin"><p class="image-label">Berlin</p></div>
+				</div>
+			</div>
+		</div>
+		
+		<br><br><br>
+		<hr>
+		<br><br><br>
+		
+		<div class="meet-guidebooks">
+			<p class="home-label">Explore the world</p>
+			<br>
+			<br>
+			<div class="meet-guidebooks-container">
+				<div class="meet-imgncaption">
+					<div class="meet-san-francisco"></div>
+					<p><span class="meet-place">San Francisco </span>6,237 places</p>
+				</div>
+				<div class="meet-san-francisco-right">
+					<div class="msf-right-top"></div>
+					<div class="msf-right-bottom"></div>
+				</div>
+				<div class="meet-imgncaption">
+					<div class="meet-new-york"></div>
+					<p><span class="meet-place">New York </span>23,725 places</p>
+				</div>
+				<div class="meet-new-york-right">
+					<div class="mny-right-top"></div>
+					<div class="mny-right-bottom"></div>
+				</div>
+				<div class="meet-imgncaption">
+					<div class="meet-london"></div>
+					<p><span class="meet-place">London </span>18,795 places</p>
+				</div>
+				<div class="meet-london-right">
+					<div class="ml-right-top"></div>
+					<div class="ml-right-bottom"></div>
+				</div>
+			</div>
+		</div>
+	
+	</section>
+</main>
+
+<footer-directive></footer-directive>
+

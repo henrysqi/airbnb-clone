@@ -1,0 +1,105 @@
+<header-directive></header-directive>
+
+	<div class="room-hero">
+		<img src="{{room.listing.xl_picture_url}}"
+	</div>
+	<div class="room-container">
+		<div class="room-content">
+			
+			<div class="room-title">
+				<div class="room-title-text">
+					<h1>{{room.listing.name}}</h1>
+					<p>{{room.listing.public_address}} &bull; <span class="stars">{{room.listing.show_stars}}</span> &bull; {{room.listing.reviews_count}} reviews</p>
+				</div>
+				<div class="room-title-pic">
+					<img src="{{room.listing.hosts[0].picture_url}}">
+				</div>
+			</div>
+			
+			<div class="room-triple-icon">
+				<div class="room-room-type">
+					<div class="room-triple-icon-content">
+						<img src="/assets/images/door.svg">
+						<p>{{room.listing.room_type}}</p>
+					</div>
+				</div>
+				<div class="room-guests">
+					<div class="room-triple-icon-content">
+						<img src="/assets/images/guests.png">
+						<p>{{room.listing.guests_included}} Guests</p>
+					</div>
+				</div>
+				<div class="room-beds">
+					<div class="room-triple-icon-content">
+						<img src="/assets/images/bed.png">
+						<p>{{room.listing.beds}} Beds</p>
+					</div>
+				</div>
+			</div>
+			<div class="room-about">
+				<h2>About this listing</h2>
+				<br>
+				<p>{{room.listing.summary}}</p>
+			</div>
+			
+			<div class="room-stats-container">
+				<div class="room-stats-title">
+					<p>The space</p>
+				</div>
+				<div class="room-stats-detail">
+					<div class="room-stats-detail-col1">
+						<p>Accomodates: <span>{{room.listing.person_capacity}}</span></p>
+						<br>
+						<p>Bathrooms: <span>{{room.listing.bathrooms}}</span></p>
+						<br>
+						<p>Bed type: <span>{{room.listing.bed_type}}</span></p>
+						<br>
+						<p>Bedrooms: <span>{{room.listing.bedrooms}}</span></p>
+					</div>
+					<div class="room-stats-detail-col2">
+						<p>Beds: <span>{{room.listing.beds}}</span></p>
+						<br>
+						<p>Check Out: <span>{{room.listing.actual_checkout_time}}</span></p>
+						<br>
+						<p>Property type: <span>{{room.listing.property_type}}</span></p>
+						<br>
+						<p>Room type: <span>{{room.listing.room_type}}</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="room-stats-container">
+				<div class="room-stats-title">
+					<p>Prices</p>
+				</div>
+				<div class="room-stats-detail">
+					<div class="room-stats-detail-col1">
+						<p>Cleaning Fee: <span>${{room.listing.cleaning_fee_native}}</span></p>
+						<br>
+						<p>Cancellation: <span>{{room.listing.cancel_policy_short_str}}</span></p>
+					</div>
+					<div class="room-stats-detail-col2">
+						<p>Weekend Price: <span>${{room.listing.listing_weekend_price_native}}</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="room-stats-container">
+				<div class="room-stats-title">
+					<p>Description</p>
+				</div>
+				<div class="room-stats-detail">
+					<p>{{room.listing.space}}</p>
+				</div>
+			</div>
+			<div class="room-stats-container">
+				<div class="room-stats-title">
+					<p>House Rules</p>
+				</div>
+				<div class="room-stats-detail">
+					<p>{{room.listing.house_rules}}</p>
+				</div>
+			</div>
+		
+		</div>		
+	</div>
+	
+<footer-directive></footer-directive>

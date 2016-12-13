@@ -1,0 +1,138 @@
+<slider-directive></slider-directive>
+
+<header-directive></header-directive>
+
+<main class="search-container">
+	<div class="search-left">
+		
+		<div class="search-filter-container">
+			<div class="search-filter-content">
+				
+				<div class="search-dates">
+					<div class="search-label">
+						<p>Dates</p>
+					</div>
+					<div class="search-box-container">
+						<input placeholder="Check In" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
+					</div>
+					<div class="search-box-container">
+						<input placeholder="Check Out" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
+					</div>
+					<div class="search-box-container">
+						<select ng-model="guestnum" ng-init="guestnum=1">
+							<option value="1">1 Guest</option>
+							<option value="2">2 Guests</option>
+							<option value="3">3 Guests</option>
+							<option value="4">4 Guests</option>
+							<option value="5">5 Guests</option>
+							<option value="6">6 Guests</option>
+							<option value="7">7 Guests</option>
+							<option value="8">8 Guests</option>
+							<option value="9">9 Guests</option>
+							<option value="10">10 Guests</option>
+							<option value="11">11 Guests</option>
+							<option value="12">12 Guests</option>
+							<option value="13">13 Guests</option>
+							<option value="14">14 Guests</option>
+							<option value="15">15 Guests</option>
+							<option value="16">16 Guests</option>
+							<option value="17">16+ Guests</option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="search-room-type">
+					<div class="search-label">
+						<p>Room Type</p>
+					</div>
+					<div class="search-box-container">
+						<div class="room-type-filter">
+							<span><i class="fa fa-home" aria-hidden="true"></i></span>
+							<span>Entire Home</span>
+							<span><input type="checkbox" data-ng-model='entire_home_filter.listing.room_type' data-ng-true-value='Entire home/apt' data-ng-false-value='' /></span>		
+						</div>
+					</div>
+					<div class="search-box-container">
+						<div class="room-type-filter">
+							<span><img src="/assets/images/door.svg"></span>
+							<span>Private Room</span>
+							<span><input type="checkbox" data-ng-model='private_room_filter.listing.room_type' data-ng-true-value='Private room' data-ng-false-value='' /></span>						
+						</div>
+					</div>
+					<div class="search-box-container">
+						<div class="room-type-filter">
+							<span><img src="/assets/images/sofa-xxl.png"></span>
+							<span>Shared Room</span>
+							<span><input type="checkbox" data-ng-model='shared_room_filter.listing.room_type' data-ng-true-value='Shared room' data-ng-false-value='' /></span>					
+						</div>
+					</div>
+				</div>
+				
+				<div class="search-price-range">
+					<div class="search-label">
+						<p>Price Range</p>
+					</div>
+					<div class="search-slider-container">					
+						<slider floor="10" ceiling="500" ng-model-low="lower_price_bound" ng-model-high="upper_price_bound"></slider>
+						<p class="lower-bound">{{lower_price_bound}}</p>
+						<p class="higher-bound">{{upper_price_bound}}</p>
+					</div>
+				</div>
+				
+				<div class="search-instant-book">
+					<div class="search-label">
+						<p>Instant Book</p>
+					</div>
+					<div class="instant-book-content">
+						<p>Listings you can book without waiting for host approval.</p>
+						<div class="onoffswitch">
+								<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" data-ng-model='instant_filter.listing.instant_bookable' data-ng-true-value='isbookable' data-ng-false-value=''>
+								<label class="onoffswitch-label" for="myonoffswitch">
+										<span class="onoffswitch-inner"></span>
+										<span class="onoffswitch-switch"></span>
+								</label>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="search-listings-container" ng-repeat="item in searchresults | filter: entire_home_filter.listing.room_type | filter: private_room_filter.listing.room_type | filter: shared_room_filter.listing.room_type | filter: instant_filter.listing.instant_bookable | filter: pricerange | filter: guestfilter">
+			<div class="listings-container">
+				<div class="listings-price">
+					<p>${{item.pricing_quote.nightly_price}}</p>
+				</div>
+				<div class="listings-image-container">
+					<a ui-sref="room({id: '{{item.listing.id}}' })"><img src="{{item.listing.picture_url}}"></a>
+					<a ui-sref="room({id: '{{item.listing.id}}' })"><figcaption class="listings-listing-name">{{item.listing.name}} </figcaption></a>
+					<a ui-sref="room({id: '{{item.listing.id}}' })"><figcaption class="listings-listing-roomtype">{{item.listing.room_type}} &bull; <span class="stars">{{item.listing.show_stars}}</span> &bull; {{item.listing.reviews_count}} reviews</figcaption></a>
+				</div>
+				<div class="listings-profile-pic">
+					<img src="{{item.listing.user.picture_url}}">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- GOOGLE MAPS ------------------------------->
+	
+	<div class="search-right-container">
+		<map-directive ng-if="metadata" geodata="metadata" listingdata="searchresults"></map-directive>
+	</div>
+	
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

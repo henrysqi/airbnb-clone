@@ -1,0 +1,285 @@
+.search-container {
+	width: 100%;
+	height: 100vh;
+}
+
+.search-left {
+	width: 60%;
+	height: 100%;
+	float: left;
+	overflow-y: scroll;
+}
+
+.search-right-container {
+	background-color:aliceblue;
+	width: 40%;
+	height: 100%;
+	float: left;
+}
+
+.search-filter-container {
+	width: 100%;
+	height: 300px;
+	padding: 0 2%;
+	border-bottom: 1px solid #DCE0E0;
+}
+
+.search-filter-content {
+	width: 96%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+/* date ============================= */
+
+.search-dates {
+	height: 22%;
+	border-bottom: 1px solid #EEF0F0;
+}
+
+.search-label {
+	height: 100%;
+	width: 19%;
+	float: left;
+}
+
+.search-label p {
+	margin-top: 25px;
+	color: #484848;
+	font-size: 14px;
+}
+
+.search-box-container {
+	height: 100%;
+	width: 27%;
+	float: left;
+}
+
+.search-box-container input{
+	width: 90%;
+	height: 60%;
+	margin-top: 15px;
+}
+
+.search-box-container select{
+	width: 90%;
+	height: 60%;
+	margin-top: 15px;
+}
+
+/* room type ============================= */
+.search-room-type {
+	height: 22%;
+	border-bottom: 1px solid #EEF0F0;
+}
+
+.room-type-filter {
+	width: 90%;
+	height: 60%;
+	margin-top: 15px;
+	position: relative;
+	padding-top: 10px;
+	
+	color: #484848;
+	font-size: 14px;
+}
+
+.room-type-filter input{
+	width: 16px;
+	height: 16px;
+	margin: 0;
+	padding: 0;
+	
+	position: absolute;
+	right: 10px;
+	margin-top: 3px;
+	
+/*
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+*/
+	
+	border: 1px solid #484848;
+}
+
+.room-type-filter img{
+	width: 16px;
+	height: 16px;
+	padding-top: 3px;
+}
+
+/* price range ============================= */
+				
+.search-price-range {
+	height: 34%;
+	border-bottom: 1px solid #EEF0F0;
+}
+
+.search-slider-container {
+	height: 100%;
+	width: 81%;
+	float: left;
+	padding-top: 10px;
+}
+
+.lower-bound {
+	display: inline;
+	font-size: 14px;
+	color: #484848;
+}
+
+.higher-bound {
+	display: inline;
+	float: right;
+	font-size: 14px;
+	color: #484848;
+}
+
+/* instant book ============================= */
+.search-instant-book {
+	height: 22%;
+}
+
+.instant-book-content {
+	height: 100%;
+	width: 81%;
+	float: left;
+	position: relative;
+}
+
+.instant-book-content p {
+	margin-top: 25px;
+	float: left;
+	font-size: 14px;
+	color: #484848;
+}
+
+/* copy pasta */
+.onoffswitch {
+		float: left;
+		right: 10px;
+		top: 18px;
+	
+    position: absolute; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #34A7C1; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+/* listings =========================================== */
+
+.search-listings-container {
+	width: 100%:
+}
+
+.listings-container {
+	height: 320px;
+	width: 46%;
+	margin: 1% 2%;
+	float: left;
+	position: relative;
+}
+
+.listings-image-container {
+	height: 80%;
+	width: 100%;
+}
+
+.listings-image-container img {
+	height: 100%;
+	width: 100%;
+}
+
+.listings-price {
+	position: absolute;
+	top: 160px;
+	background-color: rgba(51,51,51,0.9);
+	color: white;
+	font-size: 28px;
+	padding: 8px 16px;
+}
+
+.listings-profile-pic {
+	position: absolute;
+	right: 10px; 
+	bottom: 45px;
+}
+
+.listings-profile-pic img{
+	height: 56px;
+	width: 56px;
+	border-radius: 50%;
+
+}
+
+.listings-listing-name {
+	font-size: 16px;
+	color: #484848;
+}
+
+.listings-listing-roomtype {
+	font-size: 14px;
+	color: #767676;
+}
+
+
+/* google maps ====================================== */
+
+#map {
+	height: 100%;
+}
+
+.info-window-img {
+	height: 150px;
+	width: 280px;
+}
+
+.info-window-fig-top {
+	font-size: 14px;
+	color: #484848;
+}
+
+.info-window-fig-bot {
+	font-size: 12px;
+	color: #767676;
+}

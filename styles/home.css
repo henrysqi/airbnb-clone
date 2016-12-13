@@ -1,0 +1,478 @@
+main {
+	padding-top: 60px;
+}
+
+.live-there h1{
+	font-size: 48px;
+	font-weight: 300;
+	color: #484848;
+}
+
+.live-there h1 span {
+	color: #FF5A5F;
+	font-weight: bold;
+}
+
+.home-section {
+	width: 1080px;
+	margin: 50px auto;
+}
+
+hr {
+	border: none;
+	height: 1px;
+	color: #DBDBDB;
+	background-color: #DBDBDB;
+}
+
+.home-label {
+	font-size: 24px;
+	color: #484848;
+}
+
+/* search bar ================================================= */
+
+.home-filter {
+	height: 82px;
+	width: 100%;
+	border: 1px solid #ABABAB;
+}
+
+.where, .when, .guests {
+	height: 80px;
+	width: 33%;
+	float: left;
+}
+
+.filter-text {
+	font-size: 15px; 
+	font-weight: bold;
+	color: #484848;
+	
+	height: 50%;
+	padding-top: 10px;
+	padding-left: 20px;
+}
+
+.where {
+	border-right: 1px solid #ABABAB;
+}
+
+.where input {
+	padding-left: 20px;
+}
+
+.where form {
+	height: 50%;
+}
+
+.where input {
+	height: 100%;
+	width: 100%;
+	border: none;
+}
+
+.where input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #484848;
+	font-size: 16px;
+}
+.where input::-moz-placeholder { /* Firefox 19+ */
+  color: #484848;
+	font-size: 16px;
+}
+.where input:-ms-input-placeholder { /* IE 10+ */
+  color: #484848;
+	font-size: 16px;
+}
+.where input:-moz-placeholder { /* Firefox 18- */
+  color: #484848;
+	font-size: 16px;
+}
+
+.when {
+	border-right: 1px solid #ABABAB;
+}
+
+.when-calendar {
+	padding-left: 20px;
+	padding-top: 10px;
+}
+
+.when img {
+	height: 12px;
+	width: 25px;
+}
+
+.guests-num {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.guests-num select {
+	margin-left: 20px;
+	width: 80%;
+	height: 40%;
+	border: none;
+	
+	color: #484848;
+	font-size: 16px;
+}
+
+.guests-button {
+	width: 50%;
+	float: left;
+	height: 100%;
+	position: relative;
+}
+
+.guests-button button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+	background-color: #FF7E82;
+	border: none;
+	height: 65%;
+	width: 70%;
+	border-radius: 4px;
+}
+
+.guests-button p {
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/* explore airbnb picks ================================= */
+
+.explore-picks-container {
+	height: 280px;
+	width: 100%;
+}
+
+.picks-left {
+	width: 32%;
+	height: 100%;
+	margin-right: 2%;
+	float: left;
+}
+
+.picks-left img {
+	width: 100%;
+	height: 80%;
+}
+
+.picks-middle{
+	width: 32%;
+	height: 100%;
+	margin-right: 2%;
+	float: left;
+}
+
+.picks-middle img {
+	width: 100%;
+	height: 80%;
+}
+
+.picks-right {
+	width: 32%;
+	height: 100%;
+	float: left;
+}
+
+.picks-right img {
+	width: 100%;
+	height: 80%;
+}
+
+.stars {
+	color: #FFB400;
+}
+
+.explore-picks-container figcaption{
+	font-weight: 300;
+	font-size: 15px;
+	color: #484848;
+}
+
+.explore-picks-container figcaption .picks-price {
+	font-weight: bold;
+	font-size: 15px;
+	color: #484848;
+}
+
+.picks-reviews {
+	font-size: 15px;
+	font-weight: 500;
+}
+
+/* explore the world ===================================== */
+
+.image-label {
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	color: white;
+	font-size: 19px;
+	font-weight: bold;
+}
+
+.explore-world-top {
+	height: 320px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.paris {
+	background-image: url(/assets/images/o-Paris_480x320.jpg);
+	background-size: cover;
+	height: 100%;
+	width: 47%;
+	margin-right: 2%;
+	float: left;
+	position: relative;
+}
+
+.paris-right {
+	height: 100%;
+	width: 24.5%;
+	margin-right: 2%;
+	
+	float: left;
+}
+
+.paris-right-right {
+	height: 100%;
+	width: 24.5%;
+	
+	float: left;
+}
+
+.rome {
+	background-image: url(/assets/images/o-Rome_Piazza017_480x320.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 47.5%;
+	margin-bottom: 5%;
+	position: relative;
+}
+
+.lisbon {
+	background-image: url(/assets/images/o-Lisbon_480x320.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 47.5%;
+	position: relative;
+}
+
+.los-angeles {
+	background-image: url(/assets/images/o-Los_Angeles_480x320.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 47.5%;
+	margin-bottom: 5%;
+	position: relative;
+}
+
+.tokyo {
+	background-image: url(/assets/images/o-Kyoto_480x320.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 47.5%;
+	position: relative;
+}
+
+.explore-world-bottom {
+	height: 320px;
+	width: 100%;
+}
+
+.new-york-left {
+	height: 100%;
+	width: 24.5%;
+	margin-right: 2%;
+	
+	float: left;
+}
+
+.london {
+	background-image: url(/assets/images/o-London_480x320.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 47.5%;
+	margin-bottom: 5%;
+	position: relative;
+}
+
+.barcelona {
+	background-image: url(/assets/images/o-Barcelona_480x320.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 47.5%;
+	position: relative;
+}
+
+.new-york {
+	background-image: url(/assets/images/o-New_York_480x320.jpg);
+	background-size: cover;
+	height: 100%;
+	width: 47%;
+	margin-right: 2%;
+	float: left;
+	position: relative;
+}
+
+.new-york-right {
+	height: 100%;
+	width: 24.5%;
+	
+	float: left;
+}
+
+.amsterdam {
+	background-image: url(/assets/images/o-Amsterdam_480x320.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 47.5%;
+	margin-bottom: 5%;
+	position: relative;
+}
+
+.berlin {
+	background-image: url(/assets/images/o-Berlin_480x320.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 47.5%;
+	position: relative;
+}
+
+/* meet guidebooks ============================= */
+
+.meet-guidebooks-container {
+	height: 280px;
+	width: 100%;
+}
+
+.meet-imgncaption {
+	height: 100%;
+	width: 21.5%;
+	float: left;
+}
+
+.meet-san-francisco {
+	height: 80%;
+	width: 100%;
+	background-image: url(/assets/images/2a4e63c3-c981-4cbc-9c37-80a6ab3a9d24.jpg);
+	background-size: cover;
+	margin-bottom: 10px;
+}
+
+.meet-san-francisco p{
+	font-size: 15px;
+	color: #484848;
+	font-weight: 300;
+}
+
+.meet-place{
+	font-weight: bold;
+}
+
+.meet-san-francisco-right {
+	width: 10%;
+	height: 80%;
+	float: left;
+	margin-left: .5%;
+	margin-right: 2%;
+}
+
+.msf-right-top {
+	height: 47.5%;
+	width: 100%;
+	margin-bottom: 10%;
+	background-image: url(/assets/images/v1_san_francisco_food_scene_carousel@2x.jpg);
+	background-size: cover;
+}
+
+.msf-right-bottom {
+	height: 47.5%;
+	width: 100%;
+	background-image: url(/assets/images/v1_san_francisco_drinks_nightlife_carousel@2x.jpg);
+	background-size: cover;
+}
+
+.meet-new-york {
+	height: 80%;
+	width: 100%;
+	background-image: url(/assets/images/cf3b9363-34e4-4532-b051-6a7663410854.jpg);
+	background-size: cover;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.meet-new-york-right {
+	width: 10%;
+	height: 80%;
+	float: left;
+	margin-left: .5%;
+	margin-right: 2%;
+}
+
+.mny-right-top {
+	height: 47.5%;
+	width: 100%;
+	margin-bottom: 10%;
+	background-image: url(/assets/images/v1_new_york_food_scene_carousel@2x.jpg);
+	background-size: cover;
+}
+
+.mny-right-bottom {
+	height: 47.5%;
+	width: 100%;
+	background-image: url(/assets/images/v1_new_york_drinks_nightlife_carousel@2x.jpg);
+	background-size: cover;
+}
+
+.meet-london {
+	height: 80%;
+	width: 100%;
+	background-image: url(/assets/images/b62aa572-cf0b-4e4a-b886-a039a0250cf3.jpg);
+	background-size: cover;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.meet-london-right {
+	width: 10%;
+	height: 80%;
+	float: left;
+	margin-left: .5%;
+}
+
+.ml-right-top {
+	height: 47.5%;
+	width: 100%;
+	margin-bottom: 10%;
+	background-image: url(/assets/images/v1_london_food_scene_carousel@2x.jpg);
+	background-size: cover;
+}
+
+.ml-right-bottom {
+	height: 47.5%;
+	width: 100%;
+	background-image: url(/assets/images/v1_london_drinks_nightlife_carousel@2x.jpg);
+	background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+

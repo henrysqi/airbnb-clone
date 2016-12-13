@@ -1,0 +1,11 @@
+<header>
+	<a ui-sref="home"><div class="logo"><h1>skybnb</h1></div></a>
+	<a ng-click="searchFor(name)"><div class="magnify"><img src="/assets/images/magnifying-glass.png"></div></a>
+	<div class="enter-search">
+		<form ng-submit="searchFor(name)"><input type="text" placeholder="Where to?" ng-model="name"></form>
+	</div>
+	<div class="nav-item"><p>Log In</p></div>
+	<div class="nav-item"><p>Sign Up</p></div>
+	<div class="nav-item"><p>Help</p></div>
+	<div class="nav-item"><p id="become-host">Become a Host</p></div>
+</header>
